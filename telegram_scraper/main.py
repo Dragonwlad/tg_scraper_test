@@ -2,12 +2,14 @@ import asyncio
 import logging
 import signal
 
+from telegram_scraper.db.init_db import init_db
 from telegram_scraper.scheduler.scheduler import start_scheduler
 
 logger = logging.getLogger(__name__)
 
 
 async def main():
+    await init_db()
     stop_event = asyncio.Event()
 
     def handle_exit():

@@ -1,4 +1,4 @@
-CREATE DATABASE tg_scrap;
+CREATE DATABASE IF NOT EXISTS tg_scrap ;
 
 \c tg_scrap;
 

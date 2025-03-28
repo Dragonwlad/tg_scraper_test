@@ -1,12 +1,13 @@
 import asyncio
 
 from sqlalchemy import text
-from db.database import get_db_session
+from telegram_scraper.db.database import get_db_session
 
 
 async def init_db():
 
-    tg_message_table = """
+    tg_message_table = r"""
+
     CREATE TABLE IF NOT EXISTS telegram_posts (
       id SERIAL PRIMARY KEY,
       channel_id TEXT NOT NULL,

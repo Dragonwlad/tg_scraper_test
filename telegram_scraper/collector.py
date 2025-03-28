@@ -91,8 +91,8 @@ class MessageCollector:
         if not messages:
             return
 
-        saved_msg = await bulk_save_new_messages(messages)
-        logger.info('Сохранено {saved_msg} новых сообщений в БД.'.format(saved_msg=saved_msg if saved_msg > 0 else 0))
+        await bulk_save_new_messages(messages)
+        logger.info('Сохранено {saved_msg} новых сообщений в БД.'.format(saved_msg=len(messages)))
 
 
 async def run_collect_telegram_messages():

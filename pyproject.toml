@@ -1,10 +1,9 @@
 [tool.poetry]
-name = "algorithm"
+name = "tg_scrap_test"
 version = "0.1.0"
 description = ""
 authors = ["Dragonwlad <appletouchdragon@gmail.com>"]
 readme = "README.md"
-package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
