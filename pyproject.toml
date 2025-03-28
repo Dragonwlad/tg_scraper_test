@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "algorithm"
+version = "0.1.0"
+description = ""
+authors = ["Dragonwlad <appletouchdragon@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+telethon = "^1.39.0"
+sqlalchemy = "^2.0.39"
+asyncpg = "^0.30.0"
+apscheduler = "^3.11.0"
+python-dotenv = "^1.1.0"
+greenlet = "^3.1.1"
+pydantic = "^2.11.0"
+pydantic-settings = "^2.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
