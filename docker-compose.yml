@@ -22,8 +22,6 @@ services:
     restart: always
     depends_on:
       - db
-    volumes:
-      - .:/app
     env_file:
       - .env
     working_dir: /app
